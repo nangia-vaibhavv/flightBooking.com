@@ -4,9 +4,9 @@ const Users = require("../models/users");
 const mongoose = require("mongoose");
 const Amadeus = require("amadeus");
 const { sendEmail } = require("../helpers");
-const stripe = require("stripe")(
-  "sk_test_51HLtFDCzlUjqqV4cO1V60KQw15iwJxRaMiFCXVjEtR6GKVig7diKM9JS86ILjg2hI0Ohwam6VLWWjZB9jMhiww9o00TF8pP1dB"
-);
+// const stripe = require("stripe")(
+//   "sk_test_51HLtFDCzlUjqqV4cO1V60KQw15iwJxRaMiFCXVjEtR6GKVig7diKM9JS86ILjg2hI0Ohwam6VLWWjZB9jMhiww9o00TF8pP1dB"
+// );
 const amadeus = new Amadeus({
   clientId: process.env.AMADEUS_CLIENT_ID,
   clientSecret: process.env.AMADEUS_CLIENT_SECRET
