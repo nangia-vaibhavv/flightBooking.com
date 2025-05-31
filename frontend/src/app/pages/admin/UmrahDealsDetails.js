@@ -164,10 +164,10 @@ const UmrahDealsDetails = () => {
               {user ? (
                 user?.role === "1" ? (
                   <StripeCheckout
-                    token={makePayment}
-                    stripeKey={
-                      "pk_test_51HLtFDCzlUjqqV4cLqsB8OvMpfcaVDzIhl9HJAzf2trhhw3wEdQrIjR26zvooiOdLS1pqsxdW6xpbped5ObJUSIf0069JxvS7k"
-                    }
+                    // token={makePayment} todo
+                    // stripeKey={
+                    //   "pk_test_51HLtFDCzlUjqqV4cLqsB8OvMpfcaVDzIhl9HJAzf2trhhw3wEdQrIjR26zvooiOdLS1pqsxdW6xpbped5ObJUSIf0069JxvS7k"
+                    // }
                     name="PaymentForFlight"
                     amount={parseInt(deals?.details.packages.price, 10) * 100}
                     currency="INR"

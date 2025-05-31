@@ -348,10 +348,10 @@ const FlightDetails = ({
               </button>
             ) : (
               <StripeCheckout
-                token={makePayment}
-                stripeKey={
-                  "pk_test_51HLtFDCzlUjqqV4cLqsB8OvMpfcaVDzIhl9HJAzf2trhhw3wEdQrIjR26zvooiOdLS1pqsxdW6xpbped5ObJUSIf0069JxvS7k"
-                }
+                // token={makePayment} todo
+                // stripeKey={
+                //   "pk_test_51HLtFDCzlUjqqV4cLqsB8OvMpfcaVDzIhl9HJAzf2trhhw3wEdQrIjR26zvooiOdLS1pqsxdW6xpbped5ObJUSIf0069JxvS7k"
+                // }
                 name="PaymentForFlight"
                 amount={parseInt(flight?.details?.price?.total, 10) * 100}
                 currency="INR"
