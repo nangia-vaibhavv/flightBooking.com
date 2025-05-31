@@ -1,0 +1,122 @@
+.scale-up{
+  &:hover{
+    transform: scale(1.05);
+    z-index: 1;
+    transition: all 0.2s ease-in;
+  }
+}
+.lawyer-card__scale-image{
+  &:hover{
+    img{
+      transform: translateY(-5px);
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+.letter-space-1{
+  letter-spacing: 1px;
+}
+.line-height-md{
+  line-height: 1.8rem;
+}
+.break-word{
+  word-break: break-word;
+}
+.dropdown-scroll{
+  max-height: 350px;
+  overflow-y: auto;
+}
+.world-tour__title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
+}
+.blog-item__description{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  text-overflow: ellipsis;
+  text-align: justify;
+  color: $dark;
+  //white-space: nowrap;
+  overflow: hidden
+}
+.carousel-indicators li {
+  background-color: darkgray; //this can be whatever color you want
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  //height: 100px;
+  //width: 100px;
+  //outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  //border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: darkgray;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: darkgray;
+}
+.border-0-editor .ck-content{
+  border: 0 !important;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.header-link{
+  text-decoration: none;
+  color: $text-muted !important;
+  position: relative;
+  padding: 15px 20px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  &:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $success;
+    transition: all 0.3s ease-in;
+  }
+  &:hover {
+    color: $dark;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: $success;
+      transition: all 0.3s ease-in;
+    }
+  }
+  &.active{
+    color: $dark;
+    &:before{
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: $success;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
