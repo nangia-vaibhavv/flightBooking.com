@@ -4,4 +4,6 @@ backend/node_modules/
 backend/package-lock.json
 node_modules/
 package-lock.json
+backendnew/package-lock.json
+backendnew/node_modules
 # Ignore all log files
